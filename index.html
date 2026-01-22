@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+  <!-- Header -->
+  <section id="header" style="background-color: black;">
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <img src="./images/logo.png" width="60" height="60">
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#introduction" class="nav-link" style="font-size: 125%; color: white">Home</a></li>
+          <li class="nav-item"><a href="#aboutMe" class="nav-link" style="font-size: 125%; color: white">About</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link" style="font-size: 125%; color: white">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" style="font-size: 125%; color: white">Contact</a></li>
+        </ul>
+      </header>
+    </div>
+  </section>
+  <!-- Introduction -->
+  <section id="introduction" class="gradient-background">
+    <div class="container col-xxl-6 px-4 py-5">
+      <div class="row justify-content-center">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="./images/me.JPG" class="meImg d-block img-fluid" alt="Bootstrap Themes" width="250" height="300" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="name display-5 fw-bold lh-1 mb-4">Hi, I'm Yamini!</h1>
+          <p class="description lead">College Student. Learner. Explorer. Dreamer.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="./images/2026 Yamini Karthik Resume.pdf" class="btn btn-secondary btn-lg me-md-2">Resume</a>
+            <a href="https://github.com/Yamini1025" class="btn btn-secondary btn-lg px-4">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- About Me -->
+  <section id="aboutMe" class="gradient-background">
+    <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"> 
+      <div class="my-3 py-3"> <h2 class="display-5">About Me</h2></div> 
+      <div class="aboutMeSpace shadow-sm mx-auto" style="width: 90%; height: 200px; border-radius: 21px 21px 0 0;"> <p class="aboutMeText">Currently, I'm a student at San Jose State University studying Computer Science. 
+        I'm exploring my interest and curiousity in several subsets of technology, like Software Engineering, Web Development, Artificial Intelligence/Machine Learning, Product Management, 
+        and more. I'm excited to build and contribute to significant projects and simulatenously extend my experience in these fields. Apart from my academic pursuits, I enjoy dancing,
+        particularly Bharatanatyam, which is a form of Indian classical dance. My other hobbies include drawing, reading, watching movies, among others.</p></div> 
+    </div>
+  </section>
+  <!-- Projects -->
+  <section id="projects" class="gradient-background">
+    <div class="container px-4 py-5" id="featured-3">
+      <h2 class="display-5" style="text-align: center">Projects</h2>
+    </p>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="features feature col">
+          <h2>HTML-to-PDF Script</h2>
+          <p>Worked with a team of 5 to build a scalable Python-based document generation pipeline to automatically produce PDFs from HTML, including cover pages, tables of contents, bookmarks, and intact internal links.
+             The result improved reliability and efficiency by testing performance and resolving memory and navigation issues, streamlining technical publishing workflows.</p>
+        </div>
+        <div class="features feature col">
+          <h2>Instance Segmentation for Autonomous Driving</h2>
+          <p>Contributed to a team project to develop and evaluate a production-ready instance segmentation pipeline using Mask R-CNN, trained on 100K+ images from BDD100K and Cityscapes, 
+            with strong generalization across varied driving scenarios. We performed in-depth evaluation and visualization of segmentation performance, comparing Mask R-CNN with foundation-model 
+            approaches (SAM with text-conditioned detectors) to assess accuracy, trade-offs, and deployment suitability for autonomous driving.</p>
+          <a href="https://github.com/Yamini1025/Instance-Segmentation-for-Autonomous-Driving" class="icon-link">
+            See More
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="features feature col">
+          <h2>Students Knowledgebase</h2>
+          <p> A JavaFX desktop application that helps faculty manage student profiles, comments, and reports efficiently. Features include a searchable student database, editable profiles, prepopulated sample data, 
+            and interactive UI views for comments and reports. Built with Java, JavaFX, and Maven following MVC architecture. I contributed to the main UI, controller logic, prepopulated student data, and project 
+            documentation.</p>
+          <a href="https://github.com/Yamini1025/StudentsKnowledgebase" class="icon-link">
+            See More
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Me -->
+  <section id="contact" class="gradient-background">
+    <div>
+      <footer class="row py-5">
+      <h2 class="display-5" style="text-align: center; color: rgb(121, 188, 210);"> <p>Contact Me :</p></h2>
+        <h2 class="display-7" style="text-align: center; margin-right: 20%"><a href="mailto:yaminikarthik.06@gmail.com">
+          <img src= "./images/gmail.png" width=30px height=25px>
+          Email
+          </a>
+          <a href="https://www.linkedin.com/in/yamini-karthik/">
+          <img src= "./images/linkedin.png" width=30px height=30px>
+          LinkedIn
+          </a>
+          <a href="https://www.instagram.com/yaminik_/">
+          <img src= "./images/instagram.png" width=40px height=40px>
+          Instagram
+          </a> </h2>
+      </footer>
+    </div>
+  </section>
+  <!-- Footer -->
+   <section id="footer" style="background-color: black;">
+    <div class="container"> 
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top"> 
+        <div class="col-md-4 d-flex align-items-center"> 
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> 
+          <svg class="bi" width="30" height="24" aria-hidden="true">
+            <use xlink:href="#bootstrap"></use>
+          </svg> 
+        </a> 
+        <img src="./images/logo.png" width="60" height="60">
+      </div> 
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex"> 
+        <li class="ms-3">
+          <span class="mb-3 mb-md-0" style="color: white">© Yamini Karthik. All rights reserved. </span> 
+      </li> 
+    </ul> 
+  </footer> 
+</div>
+</section>
+<script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
