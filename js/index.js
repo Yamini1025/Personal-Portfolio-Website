@@ -30,3 +30,28 @@ function typeEffect() {
 }
 
 document.addEventListener("DOMContentLoaded", typeEffect);
+ 
+document.addEventListener("DOMContentLoaded", () => {
+  const expandBtn = document.getElementById("expand-btn");
+  const expandText = document.getElementById("expand-text");
+  const expandArrow = document.getElementById("expand-arrow");
+  const statusDetails = document.getElementById("status-details");
+
+  if (expandBtn && statusDetails) {
+    expandBtn.addEventListener("click", () => {
+      const isHidden = statusDetails.classList.contains("hidden");
+
+      if (isHidden) {
+        statusDetails.classList.remove("hidden");
+        if (expandText) expandText.textContent = "Collapse";
+        if (expandArrow) expandArrow.textContent = "⌃";
+        expandBtn.setAttribute("aria-expanded", "true");
+      } else {
+        statusDetails.classList.add("hidden");
+        if (expandText) expandText.textContent = "Expand details";
+        if (expandArrow) expandArrow.textContent = "⌄";
+        expandBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+});

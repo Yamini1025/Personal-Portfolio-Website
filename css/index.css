@@ -227,17 +227,42 @@ header.navbar a.active {
 .status-banner {
   width: 100%;
   max-width: 1150px;
-  margin: 2rem auto;
-  box-sizing: border-box;
-  padding: 0.85rem 1.5rem;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  border-radius: 20px;
+  margin: 2rem auto 1.25rem auto;
+  padding: 0.85rem 1.75rem;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 9999px; /* Pill shape */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  box-sizing: border-box;
+}
+
+.status-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  background-color: #2dd4bf;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(45, 212, 191, 0.2);
+  flex-shrink: 0;
+}
+
+.status-text {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.status-text strong {
+  color: #111827;
 }
 
 .dot {
@@ -251,22 +276,67 @@ header.navbar a.active {
 }
 
 .expand-btn {
-  background: none;        
-  border: none;            
-  color: #6366f1;          
-  font-weight: 500;
+  background: none;
+  border: none;
+  color: #6366f1;
+  font-weight: 600;
   font-size: 0.9rem;
-  text-decoration: bold;
-  cursor: pointer;        
-  display: flex;
+  cursor: pointer;
+  display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
-  padding: 0;
-  transition: opacity 0.2s ease;
+  gap: 0.35rem;
 }
 
-.expand-btn:hover {
-  opacity: 0.8;            
+.status-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.status-cards-grid.hidden {
+  display: none;
+}
+
+.status-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 28px;
+  padding: 1.75rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-icon {
+  font-size: 1.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.status-card h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.status-card p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.55;
+}
+
+.status-card a {
+  color: #6366f1;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.status-card a:hover {
+  text-decoration: underline;
 }
 
 .work-section {

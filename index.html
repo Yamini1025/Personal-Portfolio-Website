@@ -52,8 +52,31 @@
                 <span class="dot"></span>
                     <strong>Currently:</strong> Rebuilding this portfolio, and navigating my junior year at college.
             </div>
-            <button class="expand-btn">Expand details <span class="arrow">⌄</span></button>
+            <button id="expand-btn" class="expand-btn" aria-expanded="false">
+                <span id="expand-text">Expand details</span> 
+                <span id="expand-arrow" class="arrow">⌄</span>
+            </button>
         </section>
+
+        <div id="status-details" class="status-cards-grid hidden">
+            <div class="status-card">
+                <span class="card-icon">🛠️</span>
+                <h4>Currently building</h4>
+                <p>This portfolio rebuild!</p>
+            </div>
+
+            <div class="status-card">
+                <span class="card-icon">📌</span>
+                <h4>Recent activity</h4>
+                <p>Latest commits live on <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>[has to be wired with API]</p>
+            </div>
+
+            <div class="status-card">
+                <span class="card-icon">📖</span>
+                <h4>Reading & beyond</h4>
+                <p>Keeping up with the daily TLDR newsletter, and continuing my Leetcode streak!</p>
+            </div>
+        </div>
 
         <section id="work-areas" class="work-section">
             <h2>What I work on</h2>
