@@ -1,105 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yamini Karthik's Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-
-    <header class = "navbar">
-        <div>Yamini Karthik</div>
-        <nav>
-            <a href="#home" class="btn-other">Home</a>
-            <a href="#projects" class="btn-other">Projects</a>
-            <a href="#experience" class="btn-other">Experience & About</a>
-            <a href="#contact" class="btn-other">Contact</a>
-        </nav>
-        <a href="resume.pdf" class = "btn-primary">Résumés</a>
-    </header>
-    <main>
-        <section id="home" class="hero-section">
-            <div class="hero-content">
-                <h1>Hi, I'm Yamini.</h1>
-                <h2>
-                    I build <span class="typewriter" id="typewriter-text"></span><span class="cursor">|</span>
-                </h2>
-                <p>I make things I think are cool. Sometimes it's a project I've been thinking about, 
-                sometimes it's a random idea that gets stuck in my head and I have to make it. I 
-                like good design, interesting problems, and making things that actually feel fun to
-                use. In my free time, I'm probably dancing, working out, getting weirdly obsessed with 
-                movies and TV shows, or trying my hand at some new hobby.
-                </p>
-                <div class="hero-buttons">
-                    <a href="resume.pdf" class="btn-primary">Résumés</a>
-                    <a href="https://github.com/Yamini1025" class="btn-secondary">GitHub</a>
-                    <a href="https://www.linkedin.com/in/yamini-karthik/" class="btn-secondary">LinkedIn</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="avatar-box">
-                    <span>YK</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="status-banner">
-            <div class="status-indicator">
-                <span class="dot"></span>
-                    <strong>Currently:</strong> Rebuilding this portfolio, and navigating my junior year at college.
-            </div>
-            <button id="expand-btn" class="expand-btn" aria-expanded="false">
-                <span id="expand-text">Expand details</span> 
-                <span id="expand-arrow" class="arrow">⌄</span>
-            </button>
-        </section>
-
-        <div id="status-details" class="status-cards-grid hidden">
-            <div class="status-card">
-                <span class="card-icon">🛠️</span>
-                <h4>Currently building</h4>
-                <p>This portfolio rebuild!</p>
-            </div>
-
-            <div class="status-card">
-                <span class="card-icon">📌</span>
-                <h4>Recent activity</h4>
-                <p>Latest commits live on <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>[has to be wired with API]</p>
-            </div>
-
-            <div class="status-card">
-                <span class="card-icon">📖</span>
-                <h4>Reading & beyond</h4>
-                <p>Keeping up with the daily TLDR newsletter, and continuing my Leetcode streak!</p>
-            </div>
-        </div>
-
-        <section id="work-areas" class="work-section">
-            <h2>What I work on</h2>
-            <p class="subtitle">Tap one to view more projects!</p>
-            
-            <div class="card-grid">
-                <div class="work-card">
-                    <span class="badge">AI Agents & LLM Systems</span>
-                    <h3><a href="#projects">Autonomous Workflows & Tools</a></h3>
-                </div>
-                <div class="work-card">
-                    <span class="badge">ML & Vision</span>
-                    <h3><a href="#projects">Computer Vision Pipelines</a></h3>
-                </div>
-                <div class="work-card">
-                    <span class="badge">Full-Stack</span>
-                    <h3><a href="#projects">Web Apps & Interactive Tools</a></h3>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <script src="/js/index.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/frontend/main.jsx"></script>
+  </body>
 </html>
