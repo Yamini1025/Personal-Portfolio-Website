@@ -7,15 +7,23 @@ export default function Contact() {
     return (
         <section>
             <h2>Happy to connect!</h2>
-            <div>
-                <p>Name</p>
+            <form>
+                <label>Name</label>
+                <input type='text' placeholder="Your name" value={name} onChange={(e) => setName(e.target.value)} />
 
-            </div>
-            <div class="hero-buttons">
+                <label>Email</label>
+                <input type='email' placeholder="you@email.com" value={email} onChange={(e) => setEmail(e.target.value)} />
+
+                <label>Message</label>
+                <textarea placeholder="What's your message?" value={message} onChange={(e) => setMessage(e.target.value)} />
+
+                <button type="submit">Send message</button>
+            </form>
+            <div className="hero-buttons">
                     <a href="mailto:yamini.karthik06@gmail.com" className="contact-button">Email</a>
                     <a href="https://github.com/Yamini1025" className="contact-button">GitHub</a>
                     <a href="https://www.linkedin.com/in/yamini-karthik/" className="contact-button">LinkedIn</a>
-                </div>
+            </div>
         </section>
         
     )
