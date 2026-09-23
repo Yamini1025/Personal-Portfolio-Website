@@ -31,7 +31,7 @@ export default function Home() {
     }, [charIndex, isDeleting, wordIndex]);
 
     return (
-        <section id="home" class="hero-section">
+        <section id="home" className="hero-section">
             <div className="hero-content">
                 <h1>Hi, I'm Yamini.</h1>
                 <h2>
@@ -43,7 +43,7 @@ export default function Home() {
                 use. In my free time, I'm probably dancing, working out, getting weirdly obsessed with 
                 movies and TV shows, or trying my hand at some new hobby.
                 </p>
-                <div class="hero-buttons">
+                <div className="hero-buttons">
                     <a href="resume.pdf" className="btn-primary">Résumés</a>
                     <a href="https://github.com/Yamini1025" className="btn-secondary">GitHub</a>
                     <a href="https://www.linkedin.com/in/yamini-karthik/" className="btn-secondary">LinkedIn</a>
