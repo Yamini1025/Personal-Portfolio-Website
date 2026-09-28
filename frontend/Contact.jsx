@@ -12,7 +12,7 @@ export default function Contact() {
 
     return (
         <section id="contact" className="contact-section">
-            <h2>Happy to connect!</h2>
+            <h2 className="contact-heading">Happy to connect!</h2>
             <form onSubmit={handleSubmit} className="contact-form">
                 <div className = "form-group">
                     <label>Name</label>
