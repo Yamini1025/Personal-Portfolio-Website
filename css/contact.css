@@ -9,6 +9,15 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
+#root,
+.app,
+.main-content {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .contact-section {
   display: flex;
   flex-direction: column;
