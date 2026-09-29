@@ -11,7 +11,7 @@ export default function Navbar() {
                 <Link to="/#experience" className="btn-other">Experience & About</Link>
                 <Link to="/contact" className="btn-other">Contact</Link>
             </nav>
-            <a href="/resume.pdf" className="btn-primary">Résumé</a>
+            <Link to="/resumes" className="btn-primary">Résumés</Link>
         </header>
     );
 }

@@ -5,6 +5,7 @@ import Home from './Home';
 import StatusBanner from './StatusBanner';
 import WorkAreas from './WorkAreas';
 import Contact from './Contact';
+import Resumes from './Resumes'
 
 export default function App() {
     return (
@@ -22,6 +23,7 @@ export default function App() {
                         } />
 
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="/resumes" element={<Resumes />} />
                     </Routes>
                 </main>
             </div>

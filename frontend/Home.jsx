@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 
 const WORDS = ["AI agents.", "ML systems.", "full-stack apps."];
 
@@ -44,7 +45,7 @@ export default function Home() {
                 movies and TV shows, or trying my hand at some new hobby.
                 </p>
                 <div className="hero-buttons">
-                    <a href="resume.pdf" className="btn-primary">Résumés</a>
+                    <Link to="/resumes" className="btn-primary">Résumés</Link>
                     <a href="https://github.com/Yamini1025" className="btn-secondary">GitHub</a>
                     <a href="https://www.linkedin.com/in/yamini-karthik/" className="btn-secondary">LinkedIn</a>
                 </div>
